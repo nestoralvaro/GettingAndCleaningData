@@ -103,4 +103,4 @@ write.table(cleanedData, "cleanedData.txt")
 tidyData<-aggregate(. ~ activity+subject,data = cleanedData,FUN=mean)
 dim(tidyData) # [1] 180  68
 # Create a file with this tidy data set
-write.table(tidyData, "tidyData.txt") 
+write.table(tidyData, "tidyData.txt")
