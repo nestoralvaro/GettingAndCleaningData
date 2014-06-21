@@ -1,6 +1,7 @@
 CodeBook
 ===================
-This README file describes how to use "run_analysis.R".
+This CodeBook file describes the variables and data that "run_analysis.R" uses and generates.
+To see the information regarding the data contained within the file "tinyData.txt", please check the last section within this file.
 
 Project's source data
 -------------------
