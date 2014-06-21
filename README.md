@@ -1,6 +1,19 @@
 Readme
 ===================
-This README file describes how to use "run_analysis.R".
+This README file describes how to use the files within this repository.
+
+The repository includes the following files:
+-------------------
+- 'README.md': This file
+
+- 'CodeBook.md': Shows information about the variables used on the feature vector.
+
+- 'cleanedData.txt': File containing intermediate "Clean" data
+
+- 'tidyData.txt': File containing the final "Tidy" data.
+
+- 'run_analysis.R': R file with the code to generate the output files ( 'cleanedData.txt' and 'tidyData.txt').
+
 
 Detailed explanation on how to treat the data.
 -------------------
@@ -23,7 +36,6 @@ There are 6 activities and 30 subjects, so there're 180 (6*30) rows containing a
 Detailed explanation on how I processed the data.
 -------------------
 The steps in which I processed the data are detailed according to the source code to make it easier to follow the explanations.
-
 
 ## Step 1: Merges the training and the test sets to create one data set.
 First of all, the test files ("subject_test.txt", "X_test.txt" and "y_test.txt") are read, and all of them are stored on a data frame.

@@ -2,7 +2,7 @@ CodeBook
 ===================
 This README file describes how to use "run_analysis.R".
 
-Detailed from the project's source data
+Project's source data
 -------------------
 Site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -10,7 +10,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The data for the project was downloaded from here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Detailed explanation on the variables
+Explanation on the code variables
 -------------------
 First of all, the test files ("subject_test.txt", "X_test.txt" and "y_test.txt") are read (on "stest", "xtest" and "ytest" respectively), and all of them are stored on a data frame, called "allTests" being a 2947x563 data frame
 Then, the same process is done to the training files "subject_train.txt", "X_train.txt" and "y_train.txt", which are stored on "strain", "xtrain" and "ytrain", and then further combined on "allTrains" data frame (a 7352x563 data frame).
@@ -36,3 +36,77 @@ This clean data is used to generate the file "cleanedData.txt", that contains th
 
 The data from the clean data set ("cleanedData") is aggregated by activity and subject, outputting the mean grouped by these variables. The data frame containing this information is stored in the variable called "tidyData"
 This tidyData variable is used to generate the file "tidyData.txt", that contains the information from "tidyData" variable. 
+
+Explanation of the column names within "tinyData.txt" file
+-------------------
+There are 68 columns within tinyData.txt file. The first 2 are:
+- activity: It's an activity label to indicate the activity that the subject was performing when the measures were taken.
+- subject: An identifier of the subject who carried out the experiment.
+The following 66 columns are the measurements on the mean and standard deviation. The meaning of each one of these headers is described on the file "features_info.txt" that can be found within the main ZIP file.
+The values contained on each one of these 66 columns are the average of the measure stated on the column's name for each activity and each subject. These 66 column headers are:
+- tBodyAccMeanX
+- tBodyAccMeanY
+- tBodyAccMeanZ
+- tBodyAccStdX
+- tBodyAccStdY
+- tBodyAccStdZ
+- tGravityAccMeanX
+- tGravityAccMeanY
+- tGravityAccMeanZ
+- tGravityAccStdX
+- tGravityAccStdY
+- tGravityAccStdZ
+- tBodyAccJerkMeanX
+- tBodyAccJerkMeanY
+- tBodyAccJerkMeanZ
+- tBodyAccJerkStdX
+- tBodyAccJerkStdY
+- tBodyAccJerkStdZ
+- tBodyGyroMeanX
+- tBodyGyroMeanY
+- tBodyGyroMeanZ
+- tBodyGyroStdX
+- tBodyGyroStdY
+- tBodyGyroStdZ
+- tBodyGyroJerkMeanX
+- tBodyGyroJerkMeanY
+- tBodyGyroJerkMeanZ
+- tBodyGyroJerkStdX
+- tBodyGyroJerkStdY
+- tBodyGyroJerkStdZ
+- tBodyAccMagMean
+- tBodyAccMagStd
+- tGravityAccMagMean
+- tGravityAccMagStd
+- tBodyAccJerkMagMean
+- tBodyAccJerkMagStd
+- tBodyGyroMagMean
+- tBodyGyroMagStd
+- tBodyGyroJerkMagMean
+- tBodyGyroJerkMagStd
+- fBodyAccMeanX
+- fBodyAccMeanY
+- fBodyAccMeanZ
+- fBodyAccStdX
+- fBodyAccStdY
+- fBodyAccStdZ
+- fBodyAccJerkMeanX
+- fBodyAccJerkMeanY
+- fBodyAccJerkMeanZ
+- fBodyAccJerkStdX
+- fBodyAccJerkStdY
+- fBodyAccJerkStdZ
+- fBodyGyroMeanX
+- fBodyGyroMeanY
+- fBodyGyroMeanZ
+- fBodyGyroStdX
+- fBodyGyroStdY
+- fBodyGyroStdZ
+- fBodyAccMagMean
+- fBodyAccMagStd
+- fBodyBodyAccJerkMagMean
+- fBodyBodyAccJerkMagStd
+- fBodyBodyGyroMagMean
+- fBodyBodyGyroMagStd
+- fBodyBodyGyroJerkMagMean
+- fBodyBodyGyroJerkMagStd
