@@ -14,7 +14,10 @@ Third, you will find two output files are generated in the current working direc
 cleanedData.txt (8.3 MB): it contains a data frame called cleanedData with 10299*68 dimension.
 tidyData.txt (224 KB): it contains a data frame called result with 180*68 dimension.
 
-Lastly, use data <- read.table("tidyData.txt") command to read the file to get the average of each variable for each activity and each subject, and there are 6 activities in total and 30 subjects in total, we have 180 rows with all combinations for each of the 66 features.
+Lastly, the tidy data was created with a write.table command so can be read into R with a read.table command.
+You can use the following command to read the file to get the average of each variable for each activity and each subject
+data <- read.table("tidyData.txt") 
+There are 6 activities and 30 subjects, so there're 180 (6*30) rows containing all possible combinations for subject and activities. In this file there's also one column for each one of the 66 features.
 
 
 Detailed explanation on how I processed the data.

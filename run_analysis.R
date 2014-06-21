@@ -90,10 +90,10 @@ names(meanAndStdData)<-descriptiveNames
 subjects <- rbind(strain, stest)
 dim(subjects) # [1] 10299     1
 names(subjects) <- "subject"
-cleanedData <- cbind(subjects, yLabel, meanAndStdData)
+cleanedData <- cbind(yLabel, subjects, meanAndStdData)
 dim(cleanedData) # [1] 10299    68
 # Create a file with this clean data set
-write.table(cleanedData, "cleanedData.txt") 
+write.table(cleanedData, "cleanedData.txt", row.names = F) 
 
 
 ####################
@@ -103,4 +103,4 @@ write.table(cleanedData, "cleanedData.txt")
 tidyData<-aggregate(. ~ activity+subject,data = cleanedData,FUN=mean)
 dim(tidyData) # [1] 180  68
 # Create a file with this tidy data set
-write.table(tidyData, "tidyData.txt")
+write.table(tidyData, "tidyData.txt", row.names = F)

@@ -16,7 +16,7 @@ First of all, the test files ("subject_test.txt", "X_test.txt" and "y_test.txt")
 Then, the same process is done to the training files "subject_train.txt", "X_train.txt" and "y_train.txt", which are stored on "strain", "xtrain" and "ytrain", and then further combined on "allTrains" data frame (a 7352x563 data frame).
 Following, these 2 data frames ("training" -allTrains- and "testing" -allTests-) are combined to create the data set called "dataSet" (10299x563 dataframe).
 
-Read the features.txt file and store the data in a variable called features. We only extract the measurements on the mean and standard deviation. This results in 66 columns, which are stored on the variable "matches".
+Read the features.txt file and store the data in a variable called features. I only extract the measurements on the mean and standard deviation. This results in 66 columns, which are stored on the variable "matches".
 These columns are then stored on the variable "meanAndStdData", generating a 10299x66 data frame.
 
 Then, the file "activity_labels.txt" is read, and its information is stored on the variable "activity".
